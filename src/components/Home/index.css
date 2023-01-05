@@ -1,4 +1,4 @@
-.main-home-container {
+.main-home-div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -9,7 +9,7 @@
   font-family: 'Roboto';
 }
 
-.home-container {
+.home-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .home-container {
+  .home-div {
     background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
     background-size: cover;
     justify-content: flex-start;

@@ -1,11 +1,8 @@
 import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
-
 import {BsSearch, BsStarFill} from 'react-icons/bs'
-
 import {MdLocationOn, MdWork} from 'react-icons/md'
-
 import {Link} from 'react-router-dom'
 
 import Cookies from 'js-cookie'
@@ -110,7 +107,8 @@ class Jobs extends Component {
           />
           <button
             type="button"
-            data-data-testid="searchButton"
+            id="searchButton"
+            testid="searchButton"
             className="search-button"
             onClick={this.getJobDetails}
           >
@@ -253,7 +251,7 @@ class Jobs extends Component {
 
   loaderView = () => (
     <div className="main-loader-container">
-      <div className="loader-container" data-testid="loader">
+      <div className="loader-container" id="loader" testid="loader">
         <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
       </div>
     </div>
@@ -377,7 +375,8 @@ class Jobs extends Component {
               />
               <button
                 type="button"
-                data-testid="searchButton"
+                id="searchButton"
+                testid="searchButton"
                 className="search-button"
                 onClick={this.getJobDetails}
               >

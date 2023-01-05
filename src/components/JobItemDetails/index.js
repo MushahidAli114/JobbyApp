@@ -1,14 +1,11 @@
 /* eslint-disable camelcase */
+
 import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
-
 import {BsStarFill} from 'react-icons/bs'
-
 import {MdLocationOn, MdWork} from 'react-icons/md'
-
 import {BiLinkExternal} from 'react-icons/bi'
-
 import Cookies from 'js-cookie'
 
 import Header from '../Header'
@@ -242,7 +239,7 @@ class JobItemDetails extends Component {
 
   loaderView = () => (
     <div className="main-loader-container">
-      <div className="loader-container" data-testid="loader">
+      <div className="loader-container" id="loader" testid="loader">
         <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
       </div>
     </div>

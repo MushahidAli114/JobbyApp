@@ -5,9 +5,9 @@ import Header from '../Header'
 import './index.css'
 
 const Home = () => (
-  <div className="main-home-container">
+  <div className="main-home-div">
     <Header />
-    <div className="home-container">
+    <div className="home-div">
       <div className="home-content">
         <h1 className="home-heading">Find The Job That Fits Your Life</h1>
         <p className="home-description">
